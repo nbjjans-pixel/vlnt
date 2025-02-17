@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<audio id="backgroundMusic" loop>
+    <source src="music/chfilwy.mp3" type="audio/mp3">
+</audio>
+<div class="card" onclick="openCard()">
+    <div class="front">💌 Click to Open 💌</div>
+    <div class="inside">
+        <h1>Happy Valentine's Day! ❤️</h1>
+        <p>Will you be my valentine?</p>
+        <button onclick="showSurprise(event)">Click to accept</button>
+        <div class="surprise" id="surprise">😍 I love you! 😘</div>
+        <button id="playButton" onclick="startGame(event)" style="display: none;">Play Game! ❤️</button>
+    </div>
+</div>
+<div id="gameContainer" style="display: none;">
+    <div id="player">💝</div>
+    <div id="score">Hearts: <span id="heartCount">0</span>/5</div>
+</div>
+</body>
+</html>
